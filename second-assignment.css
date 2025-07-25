@@ -3,28 +3,60 @@
     padding: 0;
     max-width: 1140px;
 }
-.raleway-normal{
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* Navbar Section */
-.nav img{
-    font-size: 10px;
-    width: 100%;
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.navbar ul{
+    display: flex;
+    gap: 45px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-img{
+    height: 24px;
+    width: 24px;
+}
+.cart-img{
+    height: 24px;
+    width: 24px;
+    gap: 10px;
+}
+.nav-logo{
+    height: 135px;
+    width: 82px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
 .navbar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin: 30px 100px 0;
+    margin: 30px 150px 0;
 }
 .navbar a{
     display: flex;
     align-items: center;
     text-decoration: none;
     color: black;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 /* Banner section */
 .bnr-title{
@@ -35,6 +67,7 @@
 .bnr-dsc{
     font-size: 20px;
     font-weight: 300;
+    margin: auto;
 }
 .banner span{
     color: orangered;
@@ -51,7 +84,7 @@
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 100px;
+    margin: 150px;
 }
 /* Card Section */
 .crd-heading{
@@ -72,7 +105,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
-    margin: 50px;
+    margin: 150px 150px;
     gap: 20px;
 }
 .card-item{
@@ -92,27 +125,45 @@
     border: none;
 }
 /* Plant Lover Section */
+.badge{
+    height: 50%;
+    width: 50%;
+}
 .plant-lover img{
     width: 540px;
     margin-right: auto;
 }
 .plant-lover{
     display: flex;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     gap: 70px;
-    margin: 50px;   
+    margin: 210px 133px 150px;   
 }
 .Plant-title{
     font-size: 50px;
     font-weight: 600;
-    margin-top: 70px;
+    margin-top: 38px;
+    text-align: left;
 }
 .plant-ul{
     font-size: 22px;
     font-weight: 400;
-    margin-left: 30px;
+    margin-left: auto;
     margin-top: 20px;
     color: #000000;
+    padding: 20px;
+    gap: 20px;
+}
+.plant-badge{
+    height: 200px;
+    width: 50px;
+    margin-left: -950px;
+    margin-top: -600px;
+}
+.plant-right{
+    height: 521px;
+    width: 540px;
 }
 /* Latest Deals */
 .Dels-title{
@@ -131,49 +182,97 @@
 .Latest{
     display: flex;
     justify-content: center;
-    margin: 50px 50px;
+    margin: 50px 150px 50px;
 }
 .single-two img{
     display: inline-block;
     margin-left: 100px;
     border-radius: 15px;
     margin-top: 5px;
+    margin-bottom: 30px;
+}
+.single-two-title{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -120px;
+}
+.single-two-des{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
 }
 .single-three img{
     display: inline-block;
     margin-left: 100px;
     border-radius: 15px;
-    margin-top: 10px;}
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.single-three-title{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -120px;
+}
+.single-three-des{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
 .single-one img{
     height: 423px;
     border-radius: 15px;
     margin-left: 30px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.single-one-title{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -250px;
+    padding: 10px;
+}
+.single-one-des{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
 }
 /* Footer Section */
 .ftr-img{
     width: 1440px;
-    margin-left: 50px;
-} 
-/* .img-contain{
-    position: relative;
-    width: 400px;
-    height: 300px;
-}   */
-h1{
+    margin-left: 150px;
+    margin-top: 120px;
+}
+.ftr-img-sec{
+    margin-top: 50px;
+}
+.ftr-title{
     text-align: center;
     font-size: 50px;
     font-weight: 600;
-    /* position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 1; */
+    margin-left: 150px;
+    margin-top: -250px;
+    color: white; 
 }
 .subscribe-box{
     display: flex;
     align-items: center;
-    /* max-width: 830px; */
+    margin-left: 150px;
 }
 .ftr-btn-one{
     width: 830px;
@@ -220,9 +319,13 @@ h1{
 .ftr-icon{
     display: flex;
     justify-content: space-between;
-    /* font-size: 10px; */
+    height: 36px;
+    width: 20px;
+    gap: 24px;
+    margin: 30px;
 }
 .ftr-second{
     display: flex;
     justify-content: space-between;
+    margin: 150px 0 50px;
 }
