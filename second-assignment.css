@@ -91,7 +91,7 @@
     margin: 150px;
 }
 @media screen and (max-width:576px){
- .bnr-img {flex-direction: column;
+ .banner {flex-direction: column-reverse};
 }
 /* Card Section */
 .crd-heading{
@@ -133,10 +133,8 @@
 }
 @media screen and (max-width:576px) {
     .card-container{
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 2fr)};
     }
-    
-}
 /* Plant Lover Section */
 .badge{
     height: 50%;
@@ -179,7 +177,7 @@
     width: 540px;
 }
 @media screen and (max-width:576px){
- .plant-lover{display: block;   
+ .plant-lover{display: block};   
 }
 /* Latest Deals */
 .Dels-title{
@@ -269,7 +267,7 @@
     font-weight: 600;
 }
 @media screen and (max-width:576px){
- .Latest{display: block;   
+ .Latest{display: block};   
 }
 /* Footer Section */
 .ftr-img{
@@ -349,4 +347,5 @@
     margin: 150px 0 50px;
 }
 @media screen and (max-width:576px){
- .ftr-second{display: block;}
+ .ftr-second{display: block};
+}
